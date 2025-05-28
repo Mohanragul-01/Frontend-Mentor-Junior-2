@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- META-DATA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- TITLE -->  
+  <title>Product list with cart</title>
+
+</head>
+
+<body>
+  <main>
+    <div class="overlay"></div>
+    
+    <div class="main-wrapper container">
+      <div class="main-left">
+        <h1>Desserts</h1>
+        <div class="card-grid"></div>
+
+      </div>
+      <div class="main-right">
+        <h6>Your Cart (<span class="number-of-cart-items">0</span>)</h6>
+        <div class="your-cart-items-container"></div>
+
+        <div class="your-cart-container">
+          <div class="your-cart-container-full">
+            <div class="order-total-container">
+              <p>Order Total</p>
+              <p class="total-bill">$0</p>
+            </div>
+            <div class="carbon-neutral-container">
+              <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+              <p>This is a <span>carbon-neutral </span>delivery</p>
+            </div>
+            <button class="btn-dark confirm-order-btn">Confirm Order</button>
+          </div>
+          <div class="your-cart-container-empty">
+            <img src="assets/images/illustration-empty-cart.svg" alt="" />
+            <p>Your added items will appear here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-confirmed-container">
+      <img src="assets/images/icon-order-confirmed.svg" alt="" />
+      <p class="order-confirmed-title">Order Confirmed</p>
+      <p class="confirmed-p">We hope you enjoy your food!</p>
+      <div class="confirmed-cart-item-container">
+        <div class="confirmed-cart-item">
+          <div class="confirmed-left">
+            <img src="assets/images/image-baklava-thumbnail.jpg" alt="" />
+            <div class="confirmed-content">
+              <div class="confirmed-name">Classic Tiramisu</div>
+              <div class="confirmed-unit-container">
+                <p class="number-of-this-item">1</p>
+                <p class="x">x</p>
+                <p class="and">@ <span class="price-for-one">5.50</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="confirmed-total-price">$5.50</div>
+        </div>
+      </div>
+
+      <div class="order-total-container">
+        <p>Order Total</p>
+        <p class="total-bill confirmed-total-bill">$0</p>
+      </div>
+
+      <button class="btn-dark start-new-order-btn">Start New Order</button>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
